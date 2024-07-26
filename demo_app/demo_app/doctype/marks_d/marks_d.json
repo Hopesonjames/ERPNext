@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-11 11:33:10.772440",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_yphj",
+  "subject_code",
+  "subject_name",
+  "marks_obtained",
+  "total_marks",
+  "percentage"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_yphj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "subject_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "subject code",
+   "options": "Subjects"
+  },
+  {
+   "fetch_from": "subject_code.subject_name",
+   "fieldname": "subject_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "subject name"
+  },
+  {
+   "fieldname": "marks_obtained",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "marks obtained"
+  },
+  {
+   "fetch_from": "subject_code.maximum_marks",
+   "fieldname": "total_marks",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "total marks"
+  },
+  {
+   "fieldname": "percentage",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "percentage"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-11 16:31:27.173582",
+ "modified_by": "Administrator",
+ "module": "demo app",
+ "name": "Marks D",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

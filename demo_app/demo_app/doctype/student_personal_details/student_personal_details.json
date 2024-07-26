@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:regno",
+ "creation": "2024-06-10 14:54:11.588621",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_csab",
+  "name1",
+  "gender",
+  "email",
+  "column_break_r84a",
+  "department",
+  "course",
+  "regno",
+  "dob",
+  "phone",
+  "section_break_uscv",
+  "address",
+  "blood_group"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_csab",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "name"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "gender",
+   "options": "\nmale\nfemale\nothers"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "email"
+  },
+  {
+   "fieldname": "column_break_r84a",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "department"
+  },
+  {
+   "fieldname": "course",
+   "fieldtype": "Data",
+   "label": "course"
+  },
+  {
+   "fieldname": "regno",
+   "fieldtype": "Data",
+   "label": "regno",
+   "unique": 1
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Data",
+   "label": "dob"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "phone"
+  },
+  {
+   "fieldname": "section_break_uscv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "blood_group",
+   "fieldtype": "Data",
+   "label": "blood group"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-11 09:35:03.106963",
+ "modified_by": "Administrator",
+ "module": "demo app",
+ "name": "Student personal details",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,155 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-11 14:23:47.921383",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ml2b",
+  "regno",
+  "name1",
+  "gender",
+  "course",
+  "column_break_z0va",
+  "department",
+  "dob",
+  "email",
+  "phone",
+  "section_break_dfdy",
+  "marks",
+  "section_break_u8d2",
+  "extracurricular_activity",
+  "total_marks_obtained",
+  "total_maximum_marks",
+  "percentage_obtained"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ml2b",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "regno",
+   "fieldtype": "Link",
+   "label": "regno",
+   "options": "Students"
+  },
+  {
+   "fetch_from": "regno.name1",
+   "fetch_if_empty": 1,
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "name"
+  },
+  {
+   "fetch_from": "regno.gender",
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "gender"
+  },
+  {
+   "fetch_from": "regno.course",
+   "fieldname": "course",
+   "fieldtype": "Data",
+   "label": "course"
+  },
+  {
+   "fieldname": "column_break_z0va",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "regno.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "department"
+  },
+  {
+   "fetch_from": "regno.dob",
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "label": "dob"
+  },
+  {
+   "fetch_from": "regno.email_id",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "email"
+  },
+  {
+   "fetch_from": "regno.phone",
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "phone"
+  },
+  {
+   "fieldname": "section_break_u8d2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "extracurricular_activity",
+   "fieldtype": "Data",
+   "label": "Extracurricular Activity"
+  },
+  {
+   "fieldname": "section_break_dfdy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "marks",
+   "fieldtype": "Table",
+   "label": "marks",
+   "options": "Marks D"
+  },
+  {
+   "fieldname": "total_marks_obtained",
+   "fieldtype": "Float",
+   "label": "total marks obtained"
+  },
+  {
+   "fieldname": "total_maximum_marks",
+   "fieldtype": "Float",
+   "label": "total maximum marks"
+  },
+  {
+   "fieldname": "percentage_obtained",
+   "fieldtype": "Float",
+   "label": "percentage obtained"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-21 15:22:28.293862",
+ "modified_by": "Administrator",
+ "module": "demo app",
+ "name": "Extracurricular Activity",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Leave Approver",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

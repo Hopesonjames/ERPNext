@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Upload</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="uploadForm" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="email_id">Email</label>
+                    <input type="email" class="form-control" placeholder="Email" id="email_id" name="email_id" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="name">Student Name</label>
+                    <input type="text" class="form-control" placeholder="Student's Name" id="name" name="name" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="phone">Phone</label>
+                    <input type="tel" class="form-control" placeholder="Phone Number" id="phone" name="phone" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="filedata">Photo</label>
+                    <input type="file" class="form-control" id="filedata" name="filedata" accept="image/*" required>
+                </div>
+
+                <div class="col-md-12">
+                    <br>
+                    <button type="submit" class="btn btn-primary float-right">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#uploadForm').on('submit', function(event) {
+                event.preventDefault();
+                var formData = new FormData(this);
+
+                $.ajax({
+                    url: 'http://dcode.com:8002/api/method/upload.api.upload_file',
+                    type: 'POST',
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    success: function(response) {
+                        alert(response.message);
+                    },
+                    error: function(response) {
+                        alert('File upload failed');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-10 09:42:55.796452",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_07l5",
+  "admission_no",
+  "name1",
+  "gender",
+  "regno",
+  "email",
+  "phone",
+  "department",
+  "student_dob"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_07l5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "student name "
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "student gender",
+   "options": "\nmale\nfemale\nothers"
+  },
+  {
+   "fieldname": "regno",
+   "fieldtype": "Data",
+   "label": "reg:no"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "student email "
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "student phone "
+  },
+  {
+   "fieldname": "admission_no",
+   "fieldtype": "Data",
+   "label": "admission no"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "student department"
+  },
+  {
+   "fieldname": "student_dob",
+   "fieldtype": "Date",
+   "label": "student dob"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-10 14:57:53.454920",
+ "modified_by": "Administrator",
+ "module": "demo app",
+ "name": "Students info",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
